@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Mind Motion</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body style="background-color: #f8f5fc">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <img src="../assets/img/musculo.png" alt="Cargando..." class="spinner-image" />
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="../index.html" class="navbar-brand">
+                <video src="../assets/img/mind.mp4" autoplay loop muted style="width: 200px" id="milogo"></video>
+                <!-- <img src="assets/img/logo.jpg" alt="Logo" style="width: 180px;"> -->
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="../index.html" class="nav-item nav-link active">Inicio</a>
+                    <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
+                    <a href="ebooks.html" class="nav-item nav-link">Ebook</a>
+                    <a href="contacto.html" class="nav-item nav-link">Contacto</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Más
+                        </a>
+                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                            <a href="personajes.html" class="dropdown-item">Daniel & Emily</a>
+                            <a href="mercancia.html" class="dropdown-item">Mercancia</a>
+                            <a href="ejercicios.html" class="dropdown-item">Ejercicios</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="ebooks.html" class="btn btn-primary rounded-pill px-3 d-none d-lg-block" id="login-btn">Unete!<i
+                        class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Hero Section -->
+        <div class="img-fluid page-header text-white position-relative">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center py-5">
+                        <h1 class="display-3 fw-bold mb-3">Sobre Nosotros</h1>
+                        <p class="lead">
+                            Conoce nuestra historia, misión y al equipo que hace posible
+                            todo esto
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Información - Solo Texto -->
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row g-5">
+                        <div class="col-md-6">
+                            <h2 class="h1 mb-4">Nuestra Historia</h2>
+                            <p class="fs-5 text-muted">
+                                MindMotion nace de la pasión del equipo por transformar la creatividad audiovisual en un
+                                puente hacia el bienestar personal. Creen firmemente que los contenidos multimedia son
+                                una herramienta poderosa para inspirar, guiar y generar cambios positivos en la vida de
+                                las personas.
+                            </p>
+                            <p class="fs-5 text-muted">
+                                Desde su inicio, el proyecto se concibe como una plataforma creativa que combina
+                                producción audiovisual, animación y diseño digital para ofrecer experiencias
+                                significativas.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="h1 mb-4">Compromiso </h2>
+                            <p class="fs-5 text-muted">
+                                Su compromiso es acompañar a quienes los ven y leen, brindándoles herramientas que
+                                inspiren, informen y conecten con sus emociones, convirtiendo cada historia en un motor
+                                de reflexión y transformación.
+                            </p>
+                            <h2 class="h1 mb-4">Contexto que los Motivó </h2>
+                            <p class="fs-5 text-muted">
+                                El proyecto surge ante la problemática real del alto nivel de estrés en Colombia:
+                            </p>
+                            <ul class="text-muted">
+                                <li>80% de trabajadores sufre estrés laboral.</li>
+                                <li>66.3% de colombianos ha enfrentado problemas de salud mental.</li>
+                                <li>Colombia ocupa el 4to lugar mundial en estrés laboral.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="h1 mb-4 text-center">Los Pilares de MindMotion </h2>
+                                <div class="valores-carousel owl-carousel">
+                                    <div class="item">
+                                        <div class="border-start  border-4 ps-4 h-100"
+                                            style="border-color: #5A358C !important;">
+                                            <h4 class=" mb-3">Inspiración Real</h4>
+                                            <p class="text-muted mb-0">
+                                                Historias auténticas de personas como tú que encontraron en el
+                                                movimiento su herramienta de cambio.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="border-start  border-4 ps-4 h-100"
+                                            style="border-color: #5A358C !important;">
+                                            <h4 class=" mb-3">Accesibilidad Total</h4>
+                                            <p class="text-muted mb-0">
+                                                Contenido gratuito y disponible para todos. Sin barreras, sin excusas.
+                                                Donde estés, cuando quieras.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="border-start  border-4 ps-4 h-100"
+                                            style="border-color: #5A358C !important;">
+                                            <h4 class=" mb-3">Bienestar Integral</h4>
+                                            <p class="text-muted mb-0">
+                                                Cuidamos tu cuerpo y tu mente. El equilibrio físico y emocional es
+                                                nuestra prioridad.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="border-start  border-4 ps-4 h-100"
+                                            style="border-color: #5A358C !important;">
+                                            <h4 class="mb-3">Comunidad Activa</h4>
+                                            <p class="text-muted mb-0">
+                                                No estás solo en este camino. Únete a una comunidad que comparte tus
+                                                metas y te impulsa a seguir.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Productora -->
+        <div class="container-fluid bg-light py-5">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <img class="img-fluid rounded shadow-lg" src="../assets/img/logo-rensa.jpg"
+                            alt="Nuestra Productora" />
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="badge mb-3" style="background-color: #E52722;">Nuestra Productora</span>
+                        <h2 class="display-5 mb-4">Creando Contenido de Alta Calidad</h2>
+                        <p class="lead text-muted mb-4">
+                            RENSA FILMS nace de la pasión por usar la creatividad audiovisual como un puente hacia el
+                            bienestar personal. Inspirados en los valores de Resiliencia, Emoción, Notabilidad,
+                            Sabiduría y Autenticidad, buscamos generar contenidos motivacionales y prácticos que
+                            impulsen la calidad de vida y el crecimiento personal. Somos una plataforma creativa que
+                            combina producción audiovisual, animación y diseño digital para ofrecer experiencias
+                            significativas que inspiren, informen y conecten con las emociones, transformando cada
+                            historia en un mensaje de reflexión y cambio.
+                        </p>
+                        <p class="text-muted mb-4">
+                            Buscamos ser reconocidos a nivel nacional e internacional como una empresa líder en
+                            producción multimedia, destacada por su excelencia creativa, su compromiso con la innovación
+                            tecnológica y su capacidad de generar contenido que inspire, comunique y trascienda en cada
+                            proyecto.
+                        </p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-danger text-white rounded p-3 me-3">
+                                        <i class="fas fa-book fa-2x"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="h2 mb-0">1 año</h3>
+                                        <p class="text-muted mb-0">Experiencia</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class=" bg-danger text-white rounded p-3 me-3">
+                                        <i class="fas fa-camera fa-2x"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="h2 mb-0">10+</h3>
+                                        <p class="text-muted mb-0">Proyectos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-rensa btn-lg px-5">Conocer Más <i
+                                class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección del Equipo - 5 Integrantes -->
+        <div class="container py-5 my-5">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-4 mb-3">Nuestro Equipo</h2>
+                    <p class="lead text-muted">
+                        Los profesionales que hacen posible cada proyecto
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Integrante 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow h-100">
+                        <img src="../assets/img/valen-pj.png" class="card-img-top" alt="Miembro del equipo" />
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title mb-2">Valentina Urrego</h4>
+                            <p class="text-danger mb-3">Directora de Proyecto</p>
+                            <p class="card-text text-muted small">
+                                Lidera la visión creativa y coordina cada etapa del proyecto para convertir ideas en
+                                experiencias visuales impactantes.
+                            </p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <a href="https://www.instagram.com/valen_21__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="btn btn-outline-danger btn-sm"><i class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/ValenUrrego21" target="_blank" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i></a>
+                                <a href="https://valenurrego21.github.io/Portafolio2.0/index.html" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integrante 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow h-100">
+                        <img src="../assets/img/camilo-pj.png" class="card-img-top" alt="Miembro del equipo" />
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title mb-2">Camilo Cáldon</h4>
+                            <p class="text-danger mb-3">Director de Fotografía</p>
+                            <p class="card-text text-muted small">
+                                Captura cada momento con arte y técnica, transformando historias en imágenes que
+                                inspiran y conectan emocionalmente.
+                            </p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <a href="https://www.instagram.com/mylotvv/?hl=es" target="_blank" class="btn btn-outline-danger btn-sm"><i class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/ElMyloso" target="_blank" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i></a>
+                                <a href="https://elmyloso.github.io/portafolio-01-camilo/#inicio" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integrante 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow h-100">
+                        <img src="../assets/img/duvan-pj.png" class="card-img-top" alt="Miembro del equipo" />
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title mb-2">Duvan Lesmes</h4>
+                            <p class="text-danger mb-3">Editor de Video</p>
+                            <p class="card-text text-muted small">
+                                Da vida al contenido en postproducción, creando narrativas visuales que motivan y
+                                transmiten el mensaje de transformación.
+                            </p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <a href="https://www.instagram.com/dhardb_/?hl=es/" target="_blank" class="btn btn-outline-danger btn-sm"><i class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/duvansuesca" target="_blank" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i></a>
+                                <a href="https://duvansuesca.github.io/portafolioo/" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integrante 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow h-100">
+                        <img src="../assets/img/sebas-pj.png" class="card-img-top" alt="Miembro del equipo" />
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title mb-2">Sebastián Moreno</h4>
+                            <p class="text-danger mb-3">Diseñador Gráfico</p>
+                            <p class="card-text text-muted small">
+                                Construye la identidad visual de MindMotion, desde el logo hasta cada pieza digital que
+                                fortalece nuestra marca.
+                            </p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <a href="https://www.instagram.com/zmadz.art/" target="_blank" class="btn btn-outline-danger btn-sm"><i class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/SebasJMB" target="_blank" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i></a>
+                                <a href="https://sebasjmb.github.io/Sebastian/" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integrante 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow h-100">
+                        <img src="../assets/img/alejo-pj.png" class="card-img-top" alt="Miembro del equipo" />
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title mb-2">Alejandro Mendoza</h4>
+                            <p class="text-danger mb-3">Community Manager</p>
+                            <p class="card-text text-muted small">
+                                Conecta con la audiencia en redes sociales, creando contenido estratégico que inspira y
+                                construye comunidad activa.
+                            </p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" target="_blank" class="btn btn-outline-danger btn-sm"><i class="fab fa-instagram"></i></a>
+                                <a href="#" target="_blank"  class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i></a>
+                                <a href="#" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Ponte en Contacto</h3>
+                        <p class="mb-2">
+                            <i class="fa fa-map-marker-alt me-3"></i>Cl. 15 #31-42, Bogotá
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt me-3"></i>+57 319 5044575
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope me-3"></i>Rensafilms@gmail.com
+                        </p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://www.tiktok.com/@_mindmotion?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/_mindmotion0/?hl=es" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Enlaces Rápidos</h3>
+                        <a class="btn btn-link text-white-50" href="nosotros.html">Sobre Nosotros</a>
+                        <a class="btn btn-link text-white-50" href="contacto.html">Contáctanos</a>
+                        <a class="btn btn-link text-white-50" href="ebooks.html">Nuestros Servicios</a>
+                        <a class="btn btn-link text-white-50" href="">Política de Privacidad</a>
+                        <a class="btn btn-link text-white-50" href="">Términos y Condiciones</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Galería de Fotos</h3>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="../assets/img/ga-1.png" alt=""
+                                    style="width: 100px" />
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="../assets/img/ga-2.png" alt=""
+                                    style="width: 100px" />
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="../assets/img/ga-3.png" alt=""
+                                    style="width: 100px" />
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="../assets/img/ga-4.png" alt=""
+                                    style="width: 100px" />
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="../assets/img/ga-5.png" alt=""
+                                    style="width: 100px" />
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="../assets/img/ga-6.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Suscripción</h3>
+                        <p>
+                            Digitar tu correo te permite suscribirte a nuestro boletín para
+                            recibir las últimas noticias y actualizaciones.
+                        </p>
+                        <div class="position-relative mx-auto" style="max-width: 400px">
+                            <input class="form-control bg-light w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Tu correo" />
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+                                Suscribirse
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="../index.html">MindMotion</a>, Todos
+                            los derechos reservados.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="../index.html">Inicio</a>
+
+                                <a href="contacto.html">Ayuda</a>
+                                <a href="">Preguntas Frecuentes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- jQuery (requerido por la mayoría de estas librerías) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- WOW.js (animaciones al hacer scroll) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- jQuery Easing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

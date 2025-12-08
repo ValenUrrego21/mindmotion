@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mind Motion</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #F8F5FC;">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <img src="assets/img/musculo.png" alt="Cargando..." class="spinner-image">
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg  sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <video src="assets/img/mind.mp4" autoplay loop muted style="width: 200px;" id="milogo"></video>
+                <!-- <img src="assets/img/logo.jpg" alt="Logo" style="width: 180px;"> -->
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                    <a href="views/nosotros.html" class="nav-item nav-link">Sobre Nosotros</a>
+                    <a href="views/ebooks.html" class="nav-item nav-link">Ebook</a>
+                    <a href="views/contacto.html" class="nav-item nav-link">Contacto</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Más </a>
+                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                            <a href="views/personajes.html" class="dropdown-item">Daniel & Emily</a>
+                            <a href="view/mercancia.html" class="dropdown-item">Mercancia</a>
+                            <a href="views/ejercicios.html" class="dropdown-item">Ejercicios</a>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="views/ebooks.html" class="btn btn-primary rounded-pill px-3 d-none d-lg-block" id="login-btn">Unete!<i
+                        class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-5">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="assets/img/bg-carrusel.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Tú eres el cambio</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Inspírate, muévete, transforma.
+                                        Contenidos motivacionales y rutinas prácticas para mejorar tu bienestar físico y
+                                        emocional desde cualquier lugar.</p>
+                                    <a href="views/nosotros.html"
+                                        class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Aprende
+                                        Más</a>
+                                    <a href="views/ebooks.html"
+                                        class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Nuestros Ebooks</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="assets/img/bg-carrusel2.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Más que deporte, es
+                                        equilibrio</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">El estrés no tiene que definir tu
+                                        día. Descubre herramientas prácticas y contenido inspirador que te impulsen a
+                                        crear hábitos saludables y recuperar tu mejor versión</p>
+                                    <a href="views/nosotros.html"
+                                        class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Aprende
+                                        Más</a>
+                                    <a href="views/ebooks.html"
+                                        class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Nuestros
+                                        Ebooks</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- Facilities Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Beneficios</h1>
+                    <p>MindMotion transforma la manera en que te cuidas. Combinamos ejercicio, bienestar mental y
+                        contenido motivacional para que puedas mejorar tu calidad de vida desde cualquier lugar.
+                        Descubre cómo el movimiento puede ser tu mejor herramienta contra el estrés.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="facility-item">
+                            <div class="facility-icon" style="background-color: #9C27B0;">
+                                <span style="background-color: #9C27B0;"></span>
+                                <i class="fa fa-bus-alt fa-3x " style="color: #9C27B0;"></i>
+                                <span style="background-color: #9C27B0;"></span>
+                            </div>
+                            <div class="facility-text" style="background-color: #9C27B0;">
+                                <h3 class=" mb-3" style="color: #9C27B0;">Entrena donde quieras</h3>
+                                <p class="mb-0">Contenido digital gratuito y accesible. Sin horarios ni membresías,
+                                    entrena desde casa o al aire libre.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="facility-item">
+                            <div class="facility-icon" style="background-color: #26A69A;">
+                                <span style="background-color: #26A69A;"></span>
+                                <i class="fa fa-futbol fa-3x " style="color: #26A69A;"></i>
+                                <span style="background-color: #26A69A;"></span>
+                            </div>
+                            <div class="facility-text" style="background-color: #26A69A;">
+                                <h3 class=" mb-3" style="color: #26A69A;">Equilibrio Mental y Físico</h3>
+                                <p class="mb-0">Rutinas de ejercicio diseñadas para reducir el estrés y fortalecer tu
+                                    bienestar emocional.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="facility-item">
+                            <div class="facility-icon" style="background-color: #FF6B35;">
+                                <span style="background-color: #FF6B35;"></span>
+                                <i class="fa fa-home fa-3x " style="color: #FF6B35;"></i>
+                                <span style="background-color: #FF6B35;"></span>
+                            </div>
+                            <div class="facility-text" style="background-color: #FF6B35;">
+                                <h3 class=" mb-3" style="color: #FF6B35;">Historias Reales que Inspiran</h3>
+                                <p class="mb-0">Testimonios auténticos y procesos de transformación genuinos que te
+                                    motivarán a dar el primer paso.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="facility-item">
+                            <div class="facility-icon" style="background-color: #4A148C;">
+                                <span style="background-color: #4A148C;"></span>
+                                <i class="fa fa-chalkboard-teacher fa-3x " style="color: #4A148C;"></i>
+                                <span style="background-color: #4A148C;"></span>
+                            </div>
+                            <div class="facility-text" style="background-color: #4A148C;">
+                                <h3 class=" mb-3" style="color: #4A148C;">Herramientas Prácticas</h3>
+                                <p class="mb-0">Ebook interactivo con rutinas animadas, consejos y técnicas que puedes
+                                    aplicar inmediatamente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facilities End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4">Lee Sobre Nosotros y Cómo Transformamos Vidas a Través del Movimiento</h1>
+                        <p>En MindMotion creamos contenido multimedia que inspira y transforma vidas a través del
+                            deporte. Sabemos que el estrés es una realidad constante para muchos jóvenes y adultos en
+                            Colombia, y creemos firmemente que la actividad física es una herramienta poderosa para
+                            combatirlo. Por eso, producimos videos motivacionales, rutinas de ejercicio prácticas y
+                            recursos digitales educativos que puedes implementar fácilmente desde casa, un parque o
+                            donde te encuentres.
+                        </p>
+                        <p class="mb-4">No vendemos perfección ni cuerpos ideales; mostramos historias reales de
+                            personas como tú que han encontrado en el movimiento una forma de sanar, crecer y recuperar
+                            su equilibrio emocional. Nuestro objetivo es acompañarte en tu proceso de transformación
+                            personal, brindándote las herramientas y la motivación necesarias para que tomes acción,
+                            mejores tu bienestar físico y mental, y descubras que tú eres el verdadero motor del cambio
+                            en tu vida.</p>
+                        <div class="row g-4 align-items-center">
+                            <div class="col-sm-6">
+                                <a class="btn btn-primary rounded-pill py-3 px-5" href="views/nosotros.html">Lee Más</a>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle flex-shrink-0" src="assets/img/camilo.png" alt=""
+                                        style="width: 45px;">
+                                    <div class="ms-3">
+                                        <h6 class="text-dark mb-1">Camilo Caldón</h6>
+                                        <small>CEO & Fundador</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="assets/img/deporte1.jpg"
+                                    alt="">
+                            </div>
+                            <div class="col-6 text-start" style="margin-top: -150px;">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="assets/img/deporte2.jpg"
+                                    alt="">
+                            </div>
+                            <div class="col-6 text-end" style="margin-top: -150px;">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="assets/img/deporte3.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Call To Action Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                            <div class="position-relative h-100">
+                                <video class="position-absolute w-100 h-100 rounded" src="assets/img/equilibrio2.mp4"
+                                    autoplay muted loop style="object-fit: cover;"></video>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                <h1 class="mb-4">Encuentra el equilibrio</h1>
+                                <p class="mb-4">Tu bienestar físico y mental van de la mano. Accede a contenido
+                                    gratuito, rutinas efectivas y la motivación que necesitas para transformar tu día a
+                                    día. El cambio comienza con una decisión.
+                                </p>
+                                <a class="btn btn-primary py-3 px-5" href="views/ebooks.html">Empieza Ahora!<i
+                                        class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call To Action End -->
+
+
+        <!-- Classes Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Entiende los Beneficios Reales del Movimiento</h1>
+                    <p>Sabías que cada vez que te mueves, tu cuerpo activa procesos increíbles que transforman tu salud
+                        física y emocional? Conocer cómo funciona el ejercicio en tu organismo te ayudará a entender por
+                        qué es tu mejor aliado contra el estrés.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="assets/img/ap-2.jpg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <p class="d-block text-center h3 mt-3 mb-4" href="">Libera Endorfinas</p>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="assets/img/pj1.png" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary h5 mb-1 ">Daniel</h6>
+                                            <small class="text-muted">- Aprendamos juntos!</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class=" borde1 border-top border-3 border-primary pt-2">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="borde2 border-top border-3 border-success pt-2">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="borde3 border-top border-3 border-warning pt-2">
+                                        </div>
+                                    </div>
+                                    <p>Hormonas naturales de la felicidad que mejoran tu estado de ánimo y reducen la
+                                        percepción del dolor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img src="assets/img/ap-1.jpg" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <p class="d-block text-center h3 mt-3 mb-4" href="">Mejora el Sueño</p>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="assets/img/pj2.png" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary h5 mb-1">Emily</h6>
+                                            <small class="text-muted">- ¿Ves la diferencia?</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="borde1 border-top border-3 border-primary pt-2">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="borde2 border-top border-3 border-success pt-2">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="borde3 border-top border-3 border-warning pt-2">
+
+                                        </div>
+                                    </div>
+                                    <p>
+                                        El ejercicio regular te ayuda a dormir mejor y más profundo, permitiendo una
+                                        recuperación completa.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="assets/img/ap-3.jpg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <p class="d-block text-center h3 mt-3 mb-4" href="">Regula el Cortisol</p>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="assets/img/pj1.png" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary h5 mb-1">Daniel</h6>
+                                            <small class="text-muted">- Toma nota</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="borde1 border-top border-3 border-primary pt-2">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="borde2 border-top border-3 border-success pt-2">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="borde3 border-top border-3 border-warning pt-2">
+
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Reduce los niveles de cortisol, la hormona del estrés, mejorando tu equilibrio
+                                        emocional.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="assets/img/ap-4.jpg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <p class="d-block text-center h3 mt-3 mb-4" href="">Aumenta tu Confianza</p>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="assets/img/pj1.png" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary h5 mb-1">Daniel</h6>
+                                            <small class="text-muted">- Eso explica mucho, ¿no?</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="borde1 border-top border-3 border-primary pt-2">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="borde2 border-top border-3 border-success pt-2">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="borde3 border-top border-3 border-warning pt-2">
+
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Cada logro físico fortalece tu autoestima y te impulsa a creer en tu capacidad
+                                        de cambio.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="assets/img/ap-5.jpg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <p class="d-block text-center h3 mt-3 mb-4" href="">Reduce Tensión Física</p>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="assets/img/pj2.png" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary h5 mb-1">Emily</h6>
+                                            <small class="text-muted">- ¿Quién lo diría?</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="borde1 border-top border-3 border-primary pt-2">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="borde2 border-top border-3 border-success pt-2">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="borde3 border-top border-3 border-warning pt-2">
+
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Elimina la rigidez muscular y la tensión acumulada por el estrés diario en tu
+                                        cuerpo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="assets/img/ap-6.jpg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <p class="d-block text-center h3 mt-3 mb-4" href="">Construye Rutinas</p>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="assets/img/pj2.png" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary h5 mb-1">Emily</h6>
+                                            <small class="text-muted">- ¡No lo dejes para mañana!</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="borde1 border-top border-3 border-primary pt-2">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="borde2 border-top border-3 border-success pt-2">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="borde3 border-top border-3 border-warning pt-2">
+
+                                        </div>
+                                    </div>
+                                    <p>
+                                        El ejercicio constante te ayuda a desarrollar disciplina y hábitos que mejoran
+                                        toda tu vida.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Classes End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Todo lo que MindMotion tiene para ti!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">Rutinas de ejercicio con animaciones, consejos prácticos para reducir el estrés
+                            y técnicas para mejorar tu postura. Todo en un solo lugar.</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="assets/img/pt-2.jpg"
+                                style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Ebook Interactivo</h3>
+                                <span>Recursos Digitales</span>
+                            </div>
+                            <i class="fa fa-book fa-2x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">Contenido audiovisual con historias reales de transformación, mensajes positivos
+                            y la motivación que necesitas para dar el primer paso.</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="assets/img/pt-3.jpg"
+                                style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Videos Motivacionales</h3>
+                                <span>Videos que Inspiran</span>
+                            </div>
+                            <i class="fa fa-video fa-2x text-success ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">Rutinas diseñadas para hacer en casa, en el parque o donde prefieras. Sin
+                            gimnasio, sin excusas, solo tú y tu motivación.</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="assets/img/pt-4.jpg"
+                                style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Rutinas de Entrenamiento</h3>
+                                <span>Entrena Donde Quieras</span>
+                            </div>
+                            <i class="fa fa-dumbbell fa-2x text-warning ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">Consejos prácticos sobre manejo del estrés, mindfulness, hábitos saludables y
+                            cómo mejorar tu bienestar emocional.</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="assets/img/pt-1.jpg"
+                                style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Consejos de Bienestar</h3>
+                                <span>Tips para tu Día a Día</span>
+                            </div>
+                            <i class="fa fa-heart fa-2x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">Entrevistas con entrenadores, deportistas y personas que lograron transformar su
+                            vida a través del movimiento.</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="assets/img/pt-6.png"
+                                style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Historias Reales</h3>
+                                <span>Testimonios que Conectan</span>
+                            </div>
+                            <i class="fa fa-user fa-2x text-success ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">Conéctate con personas como tú en nuestras redes sociales. Comparte tu progreso,
+                            inspírate y crece junto a nosotros.</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="assets/img/pt-5.jpg"
+                                style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Comunidad MindMotion</h3>
+                                <span>Únete a la Comunidad</span>
+                            </div>
+                            <i class="fa fa-users fa-2x text-warning ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">¡Un momento!</h1>
+                    <p> ¿Cómo empezamos sin presentarnos? Somos <b>Daniel y Emily</b>, y estamos aquí para acompañarte,
+                        motivarte y demostrarte que el cambio es posible. ¡Conócenos!</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item position-relative">
+                            <!-- <img class="img-fluid rounded w-75" src="assets/img/emily.png" alt=""> -->
+                            <video src="assets/img/emilyvideo.mp4" autoplay muted loop class="rounded w-75"></video>
+                            <a href="views/personajes.html#emily">
+                                <div class="team-text text-center">
+                                    <h4>Conoce</h4>
+                                    <h3> a Emily </h3>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item position-relative">
+                            <!-- <img class="img-fluid rounded w-75" src="assets/img/daniel.png" alt=""> -->
+                            <video src="assets/img/danielvideo.mp4" autoplay muted loop class="rounded w-75"></video>
+                            <a href="views/personajes.html#daniel">
+                                <div class="team-text text-center">
+                                    <h4>Conoce</h4>
+                                    <h3> a Daniel </h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Ponte en Contacto</h3>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Cl. 15 #31-42, Bogotá</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+57 319 5044575</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>Rensafilms@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://www.tiktok.com/@_mindmotion?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/_mindmotion0/?hl=es" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Enlaces Rápidos</h3>
+                        <a class="btn btn-link text-white-50" href="views/nosotros.html">Sobre Nosotros</a>
+                        <a class="btn btn-link text-white-50" href="views/contacto.html">Contáctanos</a>
+                        <a class="btn btn-link text-white-50" href="views/ebooks.html">Nuestros Servicios</a>
+                        <a class="btn btn-link text-white-50" href="">Política de Privacidad</a>
+                        <a class="btn btn-link text-white-50" href="">Términos y Condiciones</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Galería de Fotos</h3>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="assets/img/ga-1.png" alt=""
+                                    style="width: 100px;">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="assets/img/ga-2.png" alt=""
+                                    style="width: 100px;">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="assets/img/ga-3.png" alt=""
+                                    style="width: 100px;">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="assets/img/ga-4.png" alt=""
+                                    style="width: 100px;">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="assets/img/ga-5.png" alt=""
+                                    style="width: 100px;">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="assets/img/ga-6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Suscripción</h3>
+                        <p>Digitar tu correo te permite suscribirte a nuestro boletín para recibir las últimas noticias
+                            y actualizaciones.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-light w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Tu correo">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Suscribirse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="index.html">MindMotion</a>, Todos los derechos reservados.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Inicio</a>
+
+                                <a href="views/contacto.html">Ayuda</a>
+                                <a href="#">Preguntas Frecuentes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- jQuery (requerido por la mayoría de estas librerías) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- WOW.js (animaciones al hacer scroll) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- jQuery Easing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

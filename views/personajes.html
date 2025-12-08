@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Mind Motion</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body style="background-color: #f8f5fc">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <img src="../assets/img/musculo.png" alt="Cargando..." class="spinner-image" />
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="../index.html" class="navbar-brand">
+                <video src="../assets/img/mind.mp4" autoplay loop muted style="width: 200px" id="milogo"></video>
+                <!-- <img src="assets/img/logo.jpg" alt="Logo" style="width: 180px;"> -->
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="../index.html" class="nav-item nav-link active">Inicio</a>
+                    <a href="nosotros.html" class="nav-item nav-link">Sobre Nosotros</a>
+                    <a href="ebooks.html" class="nav-item nav-link">Ebook</a>
+                    <a href="contacto.html" class="nav-item nav-link">Contacto</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Más
+                        </a>
+                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                            <a href="personajes.html" class="dropdown-item">Daniel & Emily</a>
+                            <a href="mercancia.html" class="dropdown-item">Mercancia</a>
+                            <a href="ejercicios.html" class="dropdown-item">Ejercicios</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block" id="login-btn">Unete!<i
+                        class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Hero Section con los dos personajes -->
+        <div class="container-fluid page-header bg-primary text-white position-relative">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 text-center py-5">
+                        <h1 class="display-3 fw-bold mb-3">Conoce a Nuestros Personajes</h1>
+                        <p class="lead">Las estrellas que dan vida a nuestras historias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Introducción de los Personajes -->
+        <div class="container py-5">
+            <div class="row g-5 align-items-center mb-5">
+                <!-- Personaje 1 -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg" style="background: #5b358c0e;">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="../assets/img/emily.png" class="img-fluid rounded-start h-100"
+                                    style="object-fit: cover;" alt="Personaje 1">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4">
+                                    <span class="badge mb-2" style="background: #5A358C;">Coach</span>
+                                    <h3 class="card-title mb-3">Emily</h3>
+                                    <p class="card-text text-muted">Una entrenadora apasionada y motivadora que cree que
+                                        todos pueden alcanzar sus metas fitness con la actitud correcta.</p>
+                                    <ul class="list-unstyled small">
+                                        <li class="mb-2"><i class="bi bi-heart-fill text-danger me-2"></i><strong>Le
+                                                gusta:</strong> Yoga, smoothies verdes y música energética</li>
+                                        <li class="mb-2"><i
+                                                class="bi bi-emoji-smile-fill text-success me-2"></i><strong>Personalidad:</strong>
+                                            Motivadora y positiva</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personaje 2 -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg" style="background: #5b358c0e;">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="../assets/img/daniel.png" class="img-fluid rounded-start h-100"
+                                    style="object-fit: cover;" alt="Personaje 2">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4">
+                                    <span class="badge mb-2" style="background: #5A358C;">Coach</span>
+                                    <h3 class="card-title mb-3">Daniel</h3>
+                                    <p class="card-text text-muted">Un entrenador dinámico y carismático que hace que el
+                                        ejercicio sea divertido. Especializado en ayudar a principiantes a enamorarse
+                                        del fitness.</p>
+                                    <ul class="list-unstyled small">
+
+                                        <li class="mb-2"><i class="bi bi-heart-fill text-danger me-2"></i><strong>Le
+                                                gusta:</strong> Levantamiento de pesas, cocinar saludable y superhéroes
+                                        </li>
+                                        <li class="mb-2"><i
+                                                class="bi bi-emoji-smile-fill text-success me-2"></i><strong>Personalidad:</strong>
+                                            Carismático y paciente</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carrusel de Momentos Memorables -->
+        <div class="container-fluid bg-light py-5">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h2 class="display-5 mb-3">Momentos Memorables</h2>
+                        <p class="text-muted">Las mejores escenas de nuestros personajes</p>
+                    </div>
+                </div>
+
+                <div class="momentos-carousel owl-carousel owl-theme">
+                    <!-- Momento 1 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="../assets/img/momento-1.png" class="card-img-top" alt="Momento 1">
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title">Primera Sesión Juntos
+                                </h5>
+                                <p class="card-text text-muted small">Emily y Daniel se conocieron en una certificación
+                                    y
+                                    decidieron unir fuerzas para crear el mejor equipo de coaching.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Momento 2 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="../assets/img/momento-2.png" class="card-img-top" alt="Momento 2">
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title">Maratón Solidaria
+                                </h5>
+                                <p class="card-text text-muted small">Organizaron una carrera de 5K donde recaudaron
+                                    fondos para equipar un gimnasio comunitario.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Momento 3 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="../assets/img/momento-3.png" class="card-img-top" alt="Momento 3">
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title">Transformación del Año</h5>
+                                <p class="card-text text-muted small">Celebraron cuando su cliente Mario alcanzó su meta
+                                    de correr su primer medio maratón después de años sedentario.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Momento 4 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="../assets/img/momento-4.png" class="card-img-top" alt="Momento 4">
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title">Clase Especial</h5>
+                                <p class="card-text text-muted small">Dieron una clase gratuita en una tarima con más de
+                                    200 personas. Fue tendencia en redes sociales.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Momento 5 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="../assets/img/momento-5.png" class="card-img-top" alt="Momento 5">
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title">Nuevo Ebook</h5>
+                                <p class="card-text text-muted small">Lanzaron su programa "MINDMOTION PREMIUM" que
+                                    ha
+                                    ayudado a más de 1000 personas a comenzar su transformación.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Biografía Detallada - Emily -->
+        <div class="container py-5">
+            <div class="row align-items-center g-5 mb-5" id="emily">
+                <div class="col-lg-5">
+                    <video src="../assets/img/emilyvideo.mp4" autoplay muted loop class="img-fluid rounded shadow-lg"
+                        alt="Emily"></video>
+                </div>
+                <div class="col-lg-7">
+                    <span class="badge mb-3" style="background: #5A358C;">Biografía Completa</span>
+                    <h2 class="display-6 mb-2">Emily</h2>
+                    <p class="text-muted fst-italic">"Tu cuerpo puede hacer cualquier cosa, tu mente es la que necesitas
+                        convencer."</p>
+                    <p class="lead text-muted mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
+                        et, dicta odit commodi vitae soluta impedit alias natus sed placeat quod doloribus consequatur
+                        autem repellat, accusamus voluptates eligendi asperiores enim.</p>
+
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <div class="border-start border-4 ps-3" style="border-color: #5A358C !important; ">
+                                <h5 class="mb-2" style="color: #5A358C;">Sueños</h5>
+                                <p class="text-muted small mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit. Iste nihil reprehenderit recusandae alias soluta porro saepe debitis
+                                    praesentium?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="border-start border-4 ps-3" style="border-color: #5A358C !important; ">
+                                <h5 class="mb-2" style="color: #5A358C;">Habilidades</h5>
+                                <p class="text-muted small mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit. Iste nihil reprehenderit recusandae alias soluta porro saepe debitis
+                                    praesentium?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="border-start border-4 ps-3" style="border-color: #5A358C !important; ">
+                                <h5 class="mb-2" style="color: #5A358C;">Origen</h5>
+                                <p class="text-muted small mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit. Iste nihil reprehenderit recusandae alias soluta porro saepe debitis
+                                    praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                                    eligendi nobis dolor possimus id, quo maxime dolores, natus voluptatibus neque
+                                    voluptatem corrupti hic odit tempore totam! Itaque corporis ipsum odit!</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="alert border-0" role="alert" style="background: #d8c6f0;">
+                        <i class="bi bi-lightbulb-fill me-2"></i>
+                        <strong>Dato curioso:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. At quos
+                        corrupti aliquid quaerat quisquam!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Biografía Detallada - Daniel -->
+        <div class="container-fluid bg-light py-5" id="daniel">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7 order-lg-1">
+                        <span class="badge mb-3" style="background: #5A358C;">Biografía Completa</span>
+                        <h2 class="display-6 mb-2">Daniel</h2>
+                        <p class="text-muted fst-italic">"El músculo más importante que debes entrenar es tu
+                            disciplina."</p>
+
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="border-start border-4 ps-3" style="border-color: #5A358C !important; ">
+                                    <h5 class="mb-2" style="color: #5A358C;">Sueños</h5>
+                                    <p class="text-muted small mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Molestiae porro officia obcaecati doloribus, assumenda culpa labore ut
+                                        ullam cupiditate, </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="border-start border-4 ps-3" style="border-color: #5A358C !important; ">
+                                    <h5 class="mb-2" style="color: #5A358C;">Habilidades</h5>
+                                    <p class="text-muted small mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit. Explicabo beatae optio quo placeat maxime quam corporis harum. Tenetur
+                                        sint,.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="border-start border-4 ps-3" style="border-color: #5A358C !important; ">
+                                    <h5 class="mb-2" style="color: #5A358C;">Origen</h5>
+                                    <p class="text-muted small mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                        elit. Culpa eius molestiae architecto, optio eum distinctio quibusdam rem ipsum
+                                        est maxime quasi sapiente, mayores adipisci, mollitia cupiditate reprehenderit
+                                        similique! Consequuntur, mayores!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert border-0" role="alert" style="background: #d8c6f0;">
+                            <i class="bi bi-lightbulb-fill me-2"></i>
+                            <strong>Dato curioso:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Quam repudiandae dolorem illum.
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-lg-2">
+                        <video src="../assets/img/danielvideo.mp4" autoplay muted loop
+                            class="img-fluid rounded shadow-lg" alt="Daniel"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galería de Imágenes -->
+        <div class="container py-5">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 mb-3">Galería de Imágenes</h2>
+                    <p class="text-muted">Nuestros personajes en acción</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="../assets/img/ga-1.png" class="card-img-top" alt="Galería 1">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="../assets/img/ga-1.png" class="card-img-top" alt="Galería 2">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="../assets/img/ga-1.png" class="card-img-top" alt="Galería 2">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="../assets/img/ga-1.png" class="card-img-top" alt="Galería 4">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="../assets/img/ga-1.png" class="card-img-top" alt="Galería 2">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="../assets/img/ga-1.png" class="card-img-top" alt="Galería 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Datos Curiosos Carousel -->
+        <div class="container-fluid text-white py-5">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h2 class="display-5 mb-3 text-dark">Datos Curiosos</h2>
+                        <p class="mb-0 text-dark">Cosas que no sabías sobre nuestros personajes</p>
+                    </div>
+                </div>
+
+                <div class="datos-carousel owl-carousel owl-theme">
+                    <!-- Dato 1 -->
+                    <div class="item">
+                        <div class="card text-white border-0 shadow h-100" style="background: #5A358C;">
+                            <div class="card-body text-center p-5">
+                                <i class="bi bi-egg-fried display-1 text-warning mb-3"></i>
+                                <h4 class="mb-3">Comida Favorita de Emily</h4>
+                                <p class="text-white fst-italic mb-0">Le encantan las galletas con chispas de chocolate
+                                    y el jugo
+                                    de frutas naturales.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dato 2 -->
+                    <div class="item">
+                        <div class="card bg-white text-dark border-0 shadow h-100">
+                            <div class="card-body text-center p-5">
+                                <i class="bi bi-controller display-1 text-success mb-3"></i>
+                                <h4 class="mb-3">Pasatiempo de Daniel</h4>
+                                <p class="text-muted fst-italic mb-0">Además de entrenar, le encanta jugar videojuegos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dato 3 -->
+                    <div class="item">
+                        <div class="card text-white border-0 shadow h-100" style="background: #5A358C;">
+                            <div class="card-body text-center p-5">
+                                <i class="bi bi-person display-1 text-white mb-3"></i>
+                                <h4 class="mb-3">Transformaciones Épicas</h4>
+                                <p class="text-white fst-italic mb-0">Su cliente más inspirador perdió 50 kilos en un
+                                    año. Ahora
+                                    esa persona también es entrenadora certificada.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dato 5 -->
+                    <div class="item">
+                        <div class="card bg-white text-dark border-0 shadow h-100">
+                            <div class="card-body text-center p-5">
+                                <i class="fa fa-bolt fa-4x text-primary mb-3"></i>
+                                <h4 class="mb-3">Fan de Superhéroes</h4>
+                                <p class="text-muted fst-italic mb-0">Daniel tiene su oficina decorada con figuras de
+                                    acción.
+                                    Dice que los superhéroes le recuerdan que todos tenemos un poder especial dentro.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Ponte en Contacto</h3>
+                        <p class="mb-2">
+                            <i class="fa fa-map-marker-alt me-3"></i>Cl. 15 #31-42, Bogotá
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt me-3"></i>+57 319 5044575
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope me-3"></i>Rensafilms@gmail.com
+                        </p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social"
+                                href="https://www.tiktok.com/@_mindmotion?is_from_webapp=1&sender_device=pc"
+                                target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                            <a class="btn btn-outline-light btn-social"
+                                href="https://www.instagram.com/_mindmotion0/?hl=es" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Enlaces Rápidos</h3>
+                        <a class="btn btn-link text-white-50" href="nosotros.html">Sobre Nosotros</a>
+                        <a class="btn btn-link text-white-50" href="contacto.html">Contáctanos</a>
+                        <a class="btn btn-link text-white-50" href="ebooks.html">Nuestros Servicios</a>
+                        <a class="btn btn-link text-white-50" href="">Política de Privacidad</a>
+                        <a class="btn btn-link text-white-50" href="">Términos y Condiciones</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Galería de Fotos</h3>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="../assets/img/ga-1.png" alt=""
+                                    style="width: 100px" />
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="../assets/img/ga-2.png" alt=""
+                                    style="width: 100px" />
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="../assets/img/ga-3.png" alt=""
+                                    style="width: 100px" />
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="../assets/img/ga-4.png" alt=""
+                                    style="width: 100px" />
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="../assets/img/ga-5.png" alt=""
+                                    style="width: 100px" />
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="../assets/img/ga-6.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Suscripción</h3>
+                        <p>
+                            Digitar tu correo te permite suscribirte a nuestro boletín para
+                            recibir las últimas noticias y actualizaciones.
+                        </p>
+                        <div class="position-relative mx-auto" style="max-width: 400px">
+                            <input class="form-control bg-light w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Tu correo" />
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+                                Suscribirse
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="../index.html">MindMotion</a>, Todos
+                            los derechos reservados.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="../index.html">Inicio</a>
+
+                                <a href="contacto.html">Ayuda</a>
+                                <a href="">Preguntas Frecuentes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- jQuery (requerido por la mayoría de estas librerías) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- WOW.js (animaciones al hacer scroll) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- jQuery Easing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
