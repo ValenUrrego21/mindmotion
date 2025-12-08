@@ -5,16 +5,6 @@
     new WOW().init();
 
 
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner();
-
     //velocidad del logo
     const vid = document.getElementById("milogo");
         vid.playbackRate = 1.1; // 1.1x más rápido
